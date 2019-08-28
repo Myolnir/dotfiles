@@ -17,5 +17,10 @@
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 5000,
     "editor.formatOnSave": false,
-    "javascript.updateImportsOnFileMove.enabled": "always"
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "git.autofetch": true,
+    "editor.tabSize": 2,
+    "eslint.run": "onSave",
+    "eslint.alwaysShowStatus": true,
+    "eslint.autoFixOnSave": true
 }
