@@ -96,10 +96,8 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+# Here will go your aliases, i.e.
 alias zshconfig="vi ~/.zshrc"
-alias dev="cd /Users/n510677/development/openbank"
-alias doc="cd /Users/n510677/development/openbank/frontmc/mb-api-doc-manager"
-alias onboarding="cd /Users/n510677/development/openbank/frontmc/mb-api-onboarding"
 alas redis = redis()
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
