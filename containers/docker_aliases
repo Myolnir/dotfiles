@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+# DOCKER
+alias d='docker'
+alias dstats='d stats -a --no-stream'
+alias dimages='d images'
+alias drm='d rm -v'
+alias drmi='d rmi'
+alias dstop='d stop'
+alias dlogs='d logs -f'
+alias dps='d ps --format "table{{.Names}}\t{{.Image}}\t{{.Status}}\t{{.RunningFor}}"'
+alias dpull='d pull'
+alias drun='d run -d'
+alias dit='d exec -it'
+
+alias dprune='sudo docker system prune -af && sudo docker volume prune -f'
+
+#dps () { d ps -a --format "table{{.Names}}\t{{.Image}}\t{{.Status}}\t{{.RunningFor}}" -f name=$1; }
+dsh () { dit "$1" bash; }
+
+# DOCKER MACHINE
+alias dm='docker-machine'
+dmswarm () {
+    eval $(dm env --swarm $1);
+    dm ls;
+}
+
+# DOCKER COMPOSE
+alias dc='docker-compose'
+alias dclogs='dc logs'
+alias dcps='dc ps'
+alias dcrm='dc rm'
+alias dcstop='dc stop'
+alias dcup='dc up -d'
+alias dcres='dc restart'
